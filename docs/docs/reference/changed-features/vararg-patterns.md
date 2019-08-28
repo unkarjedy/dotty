@@ -27,7 +27,7 @@ The change to the grammar is:
                  |  varid
                  |  Literal
                  |  StableId
-                 |  StableId ‘(’ [Patterns ‘)’
+                 |  StableId ‘(’ [Patterns] ‘)’
 -                |  StableId ‘(’ [Patterns ‘,’] [varid ‘@’] ‘_’ ‘*’ ‘)’
 +                |  StableId ‘(’ [Patterns ‘,’] (varid | ‘_’) ‘:’ ‘_’ ‘*’ ‘)’
                  |  ‘(’ [Patterns] ‘)’
