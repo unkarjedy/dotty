@@ -264,7 +264,7 @@ ForExpr           ::=  ‘for’ (‘(’ Enumerators ‘)’ | ‘{’ Enumerat
                     |  ‘for’ Enumerators (‘do’ Expr | ‘yield’ Expr)
 Enumerators       ::=  Generator {semi Enumerator | Guard}
 Enumerator        ::=  Generator
-                    |  Guard
+                    |  Guard {Guard}
                     |  Pattern1 ‘=’ Expr
 Generator         ::=  [‘case’] Pattern1 ‘<-’ Expr
 Guard             ::=  ‘if’ PostfixExpr
